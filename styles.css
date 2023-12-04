@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Xanh Mono', monospace;
+  
+    background-color: #8A9A5B;
+}
+  
+.calculator {
+    background: linear-gradient(88.7deg, rgb(207, 150, 207) -2.4%, rgb(107, 116, 179) 102%);
+    
+    border-radius: 10px;
+    box-shadow:  rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 22px;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+  
+input[type="text"] {
+    width: 90%; 
+    padding: 12px;
+    margin-bottom: 11px;
+    font-size: 25px;
+    text-align: right;
+    border: transparent;
+    border-radius: 3px;
+    outline: none;
+    background: #A9BA9D;
+    color:#090909 ;
+}
+  
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr); /* Updated rows to accommodate changes */
+    gap: 13px;
+    
+}
+  
+button {
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background: linear-gradient(68.8deg, rgb(174, 33, 255) 15.4%, rgb(255, 33, 33) 111.3%);
+    font-weight: 245;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+  
+button.equals {
+    grid-column: span 2; 
+    grid-row: span 1;  
+}
+  
+button.wide-button {
+    grid-row: span 2;
+}
