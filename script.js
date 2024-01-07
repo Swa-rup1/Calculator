@@ -1,11 +1,11 @@
-let input = document.getElementById('input');
+let input = document.getElementById("input");
 
 function appendValue(value) {
   input.value += value;
 }
 
 function clearInput() {
-  input.value = '';
+  input.value = "";
 }
 
 function deleteChar() {
@@ -16,13 +16,13 @@ function calculate() {
   let expression = input.value;
 
   try {
-    let result = eval(expression); // Evaluating the expression
+    let result = eval(expression);
     if (Number.isFinite(result)) {
       input.value = result;
     } else {
-      input.value = 'Error';
+      input.value = "Error";
     }
   } catch (error) {
-    input.value = 'Error';
+    input.value = "Error";
   }
 }
